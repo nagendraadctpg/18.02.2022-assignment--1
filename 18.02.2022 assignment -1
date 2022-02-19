@@ -1,0 +1,19 @@
+
+num=int(input("Enter range:"))
+
+count=0
+
+print("Prime numbers:",end=' ')
+
+for n in range(2,num):
+
+    for i in range(2,n):
+
+        if(n%i==0):
+
+            break
+
+    else:
+        count=count+1
+        
+print(count)
